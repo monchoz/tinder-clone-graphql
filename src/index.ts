@@ -5,12 +5,12 @@ const typeDefs = `#graphql
   type Card {
     name: String!,
     age: Int!,
-    location: String!,
+    company: String!,
     photo: String!,
   }
 
   type Query {
-    cards: [Card]
+    cards: [Card!]!
   }
 
   type Subscription {
